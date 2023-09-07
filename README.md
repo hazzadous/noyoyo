@@ -41,4 +41,4 @@ how comfortable people would be with that.
 
  ## App in action
 
-    ![App in action](./screenshot.png)
+![App in action](./screenshot.png)
