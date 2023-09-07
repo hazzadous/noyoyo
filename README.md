@@ -38,3 +38,7 @@ how comfortable people would be with that.
 
  I'm using react-native to get a feel for it. Previously have created a flutter
  app so want something to compare it to.
+
+ ## App in action
+
+    ![App in action](./screenshot.png)
