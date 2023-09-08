@@ -16,7 +16,8 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.hazzadous.noyoyo"
+      "bundleIdentifier": "com.hazzadous.noyoyo",
+      "buildNumber": "2"
     },
     "android": {
       "adaptiveIcon": {
