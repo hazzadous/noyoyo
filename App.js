@@ -5,7 +5,6 @@ import * as SQLite from "expo-sqlite";
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { Header } from '@rneui/themed';
 
-
 // The app provides a single screen that shows a months weight loss trend in a
 // spreadsheet like format. At the top we display the month for which we are
 // showing the data. Below that we show the weight trend data, one row per day.
@@ -147,7 +146,7 @@ export default function App() {
     <SafeAreaProvider>
       <Header centerComponent={{
         text: `${month.toLocaleString('default', { month: 'long' })} ${month.getFullYear()}`, style: { color: '#fff', fontSize: 20, fontWeight: 'bold' }
-      }} />
+      }} leftComponent={{ icon: 'chevron-left', color: '#fff', onPress: prevMonth }} rightComponent={{ icon: 'chevron-right', color: '#fff', onPress: nextMonth }} />
       <FlatList data={data} renderItem={({ item }) => <Item initialWeight={getInitialWeight()} item={item} updateItem={updateItem} />} keyExtractor={(item) => item.date} contentContainerStyle={styles.list} />
       <StatusBar style="auto" />
     </SafeAreaProvider>
